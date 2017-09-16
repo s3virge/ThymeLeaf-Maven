@@ -1,0 +1,12 @@
+body {
+    background: chocolate;
+}
+
+#thymeleaf_logo {
+    height: 10%;
+    width: 10%;
+}
+
+footer {
+    background: aqua;
+}

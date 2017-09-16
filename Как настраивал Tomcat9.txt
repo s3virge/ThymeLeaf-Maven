@@ -1,0 +1,6 @@
+Нужно добавить переменную окружения CATALINA - кодовое название томкэт
+Сделал это в файле /etc/profile
+тут уже была создана переменная для java_home
+/etc/profile устанавливает переменные только для командных оболочек.
+после перезагрузки переменная заработала.
+https://www.tutorialspoint.com/servlets/servlets-environment-setup.htm

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<!-- incantation that prevents our IDE from complaining about the
+lack of a namespace definition for all those th:* attributes. -->
+<html xmlns:th="http://www.thymeleaf.org" lang="ru">
+
+<head>
+    <title>Good Thymes Virtual Grocery</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" media="all" href="../../css/main.css" />
+    <!--<link rel="stylesheet" type="text/css" media="all" href="css/main.css" th:href="@{/css/main.css}" />-->
+</head>
+
+<body>
+
+<img id="thymeleaf_logo" src="../../images/thymeleaf.png" />
+<!--<img src="../../images/gtvglogo.png" th:src="@{/images/gtvglogo.png}" />-->
+
+    <p th:text="#{home.welcome}">Добро поржаровать.</p>
+    <p th:utext="#{home.welcome2}">Добро поржаровать.</p>
+
+    <p>Today is: <span th:text="${today}">14 Вересня 2017</span></p>
+
+    <div th:insert="~{footer :: copy}"></div>
+</body>
+
+</html>
